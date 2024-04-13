@@ -1,10 +1,15 @@
 import React from 'react'
+import NavigationBar from '../../component/navigationBar';
+import Button from 'react-bootstrap/Button';
 
-import styles from "./index.module.scss"; 
+import styles from "./index.module.scss";
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <>
+      <NavigationBar />
+      <div>Dashboard</div>
+    </>
   )
 }
 
