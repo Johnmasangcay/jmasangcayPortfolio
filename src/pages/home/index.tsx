@@ -4,13 +4,12 @@ import Button from 'react-bootstrap/Button';
 
 import styles from "./index.module.scss";
 
-const Dashboard = () => {
+const Home = () => {
   return (
     <>
-      <NavigationBar />
       <div>Dashboard</div>
     </>
   )
 }
 
-export default Dashboard
+export default Home
