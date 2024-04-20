@@ -12,6 +12,7 @@ import cSharp from './img/c.jpg';
 import netCore from './img/netCore.png';
 import visualStudio from './img/vStudio.png';
 import vsCode from './img/vscode.png';
+import Contact from './component/contact';
 
 const App = () => {
   return (
@@ -141,12 +142,6 @@ const App = () => {
           </div>
         </div>
       </figure>
-      {/* <figure>
-        <div className="fixed-wrap">
-          <div className="fixed">
-          </div>
-        </div>
-      </figure> */}
 
       {/* <!--- Contact --> */}
       <div className="container-fluid d-flex justify-content-center" id="contact">
@@ -157,12 +152,7 @@ const App = () => {
           <hr />
         </div>
       </div>
-      <div className="text-center">
-        <div className="col-12">
-          <p>Phone: (209) 641-7702</p>
-          <p>Email: johnneilmasangcay28@yahoo.com</p>
-        </div>
-      </div>
+      <Contact />
     </>
   )
 

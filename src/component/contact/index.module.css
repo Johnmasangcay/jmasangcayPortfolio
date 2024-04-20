@@ -1,0 +1,14 @@
+.inputColor {
+    background-color: #e4e3e2;
+    color: rgb(12, 4, 4);
+}
+
+.rowMargin {
+    margin-inline: 10rem;
+}
+
+@media (max-width: 991px) {
+    .rowMargin {
+        margin-inline: 0;
+    }
+}
