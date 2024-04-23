@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3, faJs, faReact, faAngular, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import NavigationBar from './component/navigationBar';
+import Projects from './component/projects';
 import sqlIcon from './img/SQL.jpg';
 import typescriptLogo from './img/typescript.jpg';
 import nextLogo from './img/nextjs.png';
@@ -15,6 +16,9 @@ import vsCode from './img/vscode.png';
 import Contact from './component/contact';
 
 const App = () => {
+
+  const [modalShow, setModalShow] = useState(false);
+  
   return (
     <>
       <NavigationBar />
@@ -25,7 +29,7 @@ const App = () => {
       </div>
       <div className="caption center_block">
         <h3>Hello, I'm John Neil</h3>
-        <h3>Full-Stack Developer</h3>
+        <h3>Software Developer</h3>
       </div>
       <div className="container-fluid d-flex justify-content-center" id='about'>
         <div className="row welcome">
@@ -131,9 +135,10 @@ const App = () => {
         </div>
       </div>
       <div className="text-center">
-        <button type="button" className="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-lg">View Projects</button>
+        <button type="button" className="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-lg" onClick={() => setModalShow(true)}>View Projects</button>
         <hr />
       </div>
+      <Projects show={modalShow} onHide={() => setModalShow(false)}  />
 
       {/* <!--- Fixed background --> */}
       <figure>

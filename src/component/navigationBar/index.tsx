@@ -17,6 +17,7 @@ const NavigationBar = () => {
             <Nav.Link className={`${styles.navLink}`} href="#skills">Skills</Nav.Link>
             <Nav.Link className={`${styles.navLink}`} href="#projects">Projects</Nav.Link>
             <Nav.Link className={`${styles.navLink}`} href="#contact">Contact</Nav.Link>
+            <Nav.Link className={`${styles.navLink}`} href="#contact">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -25,9 +25,8 @@ const Contact = () => {
                         </Button>
                     </form>
                     <div className="text-center">
-                        <div className="col-md-12">
+                        <div className="col-md-12 my-3">
                             <h6>Phone: (209) 641-7702</h6>
-                            <h6>Email: johnneilmasangcay28@yahoo.com</h6>
                         </div>
                     </div>
                 </div>
