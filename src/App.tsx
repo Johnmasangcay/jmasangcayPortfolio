@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3, faJs, faReact, faAngular, faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJs, faReact, faAngular, faBootstrap, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import NavigationBar from './component/navigationBar';
 import Projects from './component/projects';
@@ -13,12 +13,15 @@ import cSharp from './img/c.jpg';
 import netCore from './img/netCore.png';
 import visualStudio from './img/vStudio.png';
 import vsCode from './img/vscode.png';
+import aspNet from './img/AspNetImg.jpg';
+import visualBasic from './img/VisualbasicImg.svg';
 import Contact from './component/contact';
+import Footer from './component/footer';
 
 const App = () => {
 
   const [modalShow, setModalShow] = useState(false);
-  
+
   return (
     <>
       <NavigationBar />
@@ -45,11 +48,10 @@ const App = () => {
         </div>
       </div>
       <div className="container-fluid">
-        <div className="row">
+        <div className="row px-5">
           <div className="col-md-12 aboutMeDescription">
-            <p>Self-driven, ambitious, eager to learn and passionate are the characteristics that I have why you are reading this. I don't take things easily even if it's something that I've been doing
-              and I like getting things done.</p>
-            <p>I have the drive and have what it takes to be part of a progressing team and become a tool for the success of others and myself.</p>
+            <p>I'm self-motivated, ambitious, and always eager to learn. I take on challenges head-on and get things done, no matter how familiar they are.</p>
+            <p>I thrive in a team environment and see myself as an asset for both the team's success and my own. I'm passionate about what I do and constantly strive to improve. Let's achieve great things together!</p>
           </div>
         </div>
       </div>
@@ -110,6 +112,14 @@ const App = () => {
             <h4>SQL Server</h4>
           </div>
           <div className="col-sx-12 col-sm-6 col-md-3">
+            <img className="icon" src={aspNet} alt="ASP.NET" />
+            <h4>ASP.NET</h4>
+          </div>
+          <div className="col-sx-12 col-sm-6 col-md-3">
+            <img className="icon" src={visualBasic} alt="Visual Basic" />
+            <h4>Visual Basic</h4>
+          </div>
+          <div className="col-sx-12 col-sm-6 col-md-3">
             <img className="icon" src={visualStudio} alt="Visual Studio" />
             <h4>Visual Studio</h4>
           </div>
@@ -138,7 +148,7 @@ const App = () => {
         <button type="button" className="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-lg" onClick={() => setModalShow(true)}>View Projects</button>
         <hr />
       </div>
-      <Projects show={modalShow} onHide={() => setModalShow(false)}  />
+      <Projects show={modalShow} onHide={() => setModalShow(false)} />
 
       {/* <!--- Fixed background --> */}
       <figure>
@@ -158,6 +168,7 @@ const App = () => {
         </div>
       </div>
       <Contact />
+      <Footer />
     </>
   )
 

@@ -1,0 +1,36 @@
+.social a {
+    font-size: 3em;
+    padding: 3rem;
+}
+
+.facebook {
+    color: #3b5998
+}
+
+.fagithub {
+    color:#211f1f;
+}
+
+.falinkedin {
+    color: #0077B5;
+}
+
+.fa-facebook-square:hover,
+.fa-github:hover,
+.fa-linkedin:hover {
+    color: #d5d5d5;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+hr.dark {
+    border-top: 1px solid #484848;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
